@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "module": "runtime-web",
+  "classification": "optional",
+  "execution": "process",
+  "runtime": "go",
+  "placements": [
+    "server"
+  ],
+  "principal_class": 1,
+  "principal_ref": 23,
+  "stages": [
+    {
+      "id": 1,
+      "name": "rpc-fault-http-status",
+      "event_kind": 9985
+    }
+  ],
+  "source_sha256": "8255e758a4276dde4c5df716105274b861bbcff41ddb748b207f5c75205a01cc",
+  "owned_files": [
+    "src/modules/runtime-web/module.yaml",
+    "src/modules/runtime-web/module_adapter.c",
+    "src/modules/runtime-web/include/aimee/runtime-web/module_api.h",
+    "src/tests/test_server_error_kind.c",
+    "docs/modules/runtime-web.md",
+    "server-go/modules/runtime-web/policy/status.go",
+    "server-go/modules/runtime-web/runtime_web.go",
+    "server-go/modules/runtime-web/runtime_web_test.go"
+  ]
+}
